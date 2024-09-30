@@ -1,0 +1,1 @@
+Laravel clean build with auth + livewire v3 + bootstrap v5.3.3 + internachi/modular
