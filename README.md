@@ -1,8 +1,7 @@
 Laravel clean build with auth + livewire v3 + bootstrap v5.3.3 + internachi/modular
 
-!**--- Команды для самостоятельной сборки с нуля без шаблонов авторизации ---**!
-<code>
-- composer create-project laravel/laravel example-app
+-- Команды для самостоятельной сборки с нуля без шаблонов авторизации
+```composer create-project laravel/laravel example-app
 - composer require livewire/livewire
 - php artisan livewire:publish --config
 - composer require internachi/modular
@@ -11,5 +10,5 @@ Laravel clean build with auth + livewire v3 + bootstrap v5.3.3 + internachi/modu
 - npm i bootstrap-icons
 - npm i --save bootstrap @popperjs/core
 - npm install
-- composer require laravel/ui
-</code>
+- composer require laravel/ui```
+
