@@ -1,5 +1,5 @@
 Laravel clean build with auth + livewire v3 + bootstrap v5.3.3 + internachi/modular
--- Команды для запуска приложения если вы его клонировали
+##Команды для запуска приложения если вы его клонировали
 ```
 composer install
 composer update
@@ -9,7 +9,7 @@ npm run dev || npm run build
 php artisan migrate
 ```
 
--- Команды для самостоятельной сборки с нуля без шаблонов авторизации
+##Команды для самостоятельной сборки с нуля без шаблонов авторизации
 ```
 composer create-project laravel/laravel example-app
 composer require livewire/livewire
