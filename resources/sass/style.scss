@@ -1,0 +1,84 @@
+// Custom.scss
+// Включить части Bootstrap
+
+$enable-gradients: true;
+$enable-shadows: true;
+$enable-negative-margins: true;
+$enable-smooth-scroll: true;
+$enable-caret: false;
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+// 1. Сначала включите функции (чтобы вы могли манипулировать цветами, SVG, вычислениями и т. д.)
+@import "bootstrap/scss/functions";
+
+// 2. Включите сюда любые переопределения переменных по умолчанию.
+$body-color: #333;
+$body-bg: #fff;
+$border-radius: .4rem;
+$focus-ring-width: .1rem;
+
+// 3. Включите остальные необходимые таблицы стилей Bootstrap (включая любые отдельные таблицы стилей цветового режима).
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+// 4. Включите сюда любые переопределения карты по умолчанию.
+
+$theme-colors: map-merge($theme-colors, $colors);
+
+$dropdown-padding-x: .25rem;
+$dropdown-padding-x: .25rem;
+$dropdown-item-border-radius: .25rem;
+$dropdown-link-color: var(--#{$prefix}body-color);
+$dropdown-link-hover-color: $dropdown-link-color;
+$dropdown-link-hover-bg: var(--#{$prefix}secondary-bg);
+
+// 5. Включить остальные необходимые детали
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+
+// 6. При необходимости включите любые другие детали по мере необходимости.
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/accordion";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/popover";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/spinners";
+@import "bootstrap/scss/offcanvas";
+@import "bootstrap/scss/placeholders";
+
+
+@import "bootstrap/scss/helpers";
+
+// 7. При желании включите API утилит последним для создания классов на основе карты Sass в `_utilities.scss`
+@import "bootstrap/scss/utilities/api";
+
+// 8. Добавьте сюда дополнительный пользовательский код
+
+.dropdown-menu {
+    --#{$prefix}dropdown-item-border-radius: .25rem;
+}

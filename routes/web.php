@@ -18,8 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes(['verify' => true]);
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::middleware('auth')->group(function () {
@@ -34,4 +32,4 @@ Route::middleware('auth')->group(function () {
      })->middleware('password.confirm');
 });
 
-
+require __DIR__.'/auth.php';
