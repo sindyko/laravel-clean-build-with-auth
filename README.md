@@ -5,8 +5,9 @@ composer install
 composer update
 npm install
 npm update
-npm run dev || npm run build
+php artisan key:generate
 php artisan migrate
+npm run dev || npm run build
 ```
 
 ## Команды для самостоятельной сборки с нуля без шаблонов авторизации

@@ -18,6 +18,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/settings', function () {
+        return view('secret');
+     })->middleware('password.confirm');
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/secret', function () {
+        return 'super secret info';
+     })->middleware('password.confirm');
+});
+
+
