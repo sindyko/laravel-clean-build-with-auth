@@ -18,18 +18,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware('auth')->group(function () {
+
+Route::middleware(['auth', 'verified'])->group(function () {
+
     Route::get('/settings', function () {
         return view('secret');
      })->middleware('password.confirm');
-});
 
-Route::middleware('auth')->group(function () {
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
     Route::get('/secret', function () {
-        return 'super secret info';
-     })->middleware('password.confirm');
+        return view('secret');
+     })->name('secret');
+
 });
 
 require __DIR__.'/auth.php';

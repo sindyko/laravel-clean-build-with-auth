@@ -13,6 +13,7 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    <a href="{{ route('secret') }}" class="btn btn-indigo">КУКУШКА</a>
                 </div>
             </div>
         </div>

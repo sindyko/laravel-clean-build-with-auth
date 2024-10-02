@@ -1,7 +1,7 @@
 // Custom.scss
 // Включить части Bootstrap
 
-$enable-gradients: true;
+// $enable-gradients: true;
 $enable-shadows: true;
 $enable-negative-margins: true;
 $enable-smooth-scroll: true;
@@ -26,11 +26,15 @@ $focus-ring-width: .1rem;
 $theme-colors: map-merge($theme-colors, $colors);
 
 $dropdown-padding-x: .25rem;
-$dropdown-padding-x: .25rem;
+$dropdown-padding-y: .25rem;
 $dropdown-item-border-radius: .25rem;
 $dropdown-link-color: var(--#{$prefix}body-color);
 $dropdown-link-hover-color: $dropdown-link-color;
 $dropdown-link-hover-bg: var(--#{$prefix}secondary-bg);
+
+$btn-padding-y: 0.25rem;
+$btn-padding-x: 0.45rem;
+$btn-border-radius: 0.375rem;
 
 // 5. Включить остальные необходимые детали
 @import "bootstrap/scss/maps";
