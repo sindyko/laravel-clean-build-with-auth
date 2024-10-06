@@ -11,9 +11,15 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
                     {{ __('You are logged in!') }}
-                    <a href="{{ route('secret') }}" class="btn btn-indigo">КУКУШКА</a>
+
+                    <div class="d-flex flex-column gap-2">
+                        <div class="d-flex flex-row gap-2">
+                            <x-button color="primary">Кнопка</x-button>
+                            <x-link color="indigo" href="{{ route('secret') }}">Ссылка</x-link>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>

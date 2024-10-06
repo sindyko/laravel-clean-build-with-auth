@@ -136,7 +136,7 @@
     color-scheme: dark;
 
     // scss-docs-start root-dark-mode-vars
-    --#{$prefix}body-app-bg-dark: #{$body-app-bg-dark};
+    --#{$prefix}body-app-bg: #{$body-app-bg-dark};
 
     --#{$prefix}body-color: #{$body-color-dark};
     --#{$prefix}body-color-rgb: #{to-rgb($body-color-dark)};
