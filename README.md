@@ -5,6 +5,7 @@ composer install
 composer update
 npm install
 npm update
+php artisan vendor:publish --tag=modular-config
 php artisan key:generate
 php artisan migrate
 npm run dev || npm run build
@@ -16,6 +17,7 @@ composer create-project laravel/laravel example-app
 composer require livewire/livewire
 php artisan livewire:publish --config
 composer require internachi/modular
+php artisan vendor:publish --tag=modular-config
 npm install -D bootstrap@5.3.3
 npm install -D sass
 npm i bootstrap-icons
